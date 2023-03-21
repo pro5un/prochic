@@ -1,0 +1,171 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+KR:wght@100;700;900&family=Noto+Serif+KR:wght@200&family=Playfair+Display:wght@400;600&family=Shrikhand&family=Yeseva+One&display=swap');
+
+:root {
+    font-family: 'Anton', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Noto Serif KR', serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Shrikhand', cursive;
+    font-family: 'Yeseva One', cursive;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo-sec{
+    width: 100%;
+    min-height: 150vh;
+}
+
+.container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    clip-path: circle(200px at center center);
+}
+
+.container > video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.contents{
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    z-index: 50;
+    color: #fff;
+    font-family: 'Shrikhand';
+}
+a:link, a:visited {
+    text-decoration: none;
+}
+
+.inner {
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    background-color: #fff;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    /* background-color: #fff; */
+}
+
+nav {
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav01, .nav02 {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.nav01 > a, .nav02 > a {
+    font-size: 1.2rem;
+    font-family: 'Anton';
+    color: #000;
+}
+
+.nav01 > a:hover, .nav02 > a:hover{
+    color: red;
+    transition: 0.5s;
+}
+
+.main-top{
+    margin-top: 5em;
+    height: 100%;
+}
+
+.main-top > video{
+    width: 1400px;
+    height: 800px;
+    object-fit: cover;
+}
+
+.main-top > h2{
+    font-family: 'Shrikhand';
+    letter-spacing: 0.1rem;
+    font-size: 1.5vw;
+    display: flex;
+    justify-content: flex-end;
+}  
+
+.new-arr{
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.top01{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10em;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.top01 > h2{
+    width: 1400px;
+    height: 50px;
+    border-bottom: 2px solid #000 ;
+    font-size: 3rem;
+}
+
+.top01 > img{
+    width: 50vw;
+}
+
+.item01{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+}
+
+.item01 > a > img{
+    width: 130px;
+    height: 180px;
+    /* object-fit: cover; */
+    border-radius: 50%;
+    opacity: .4;
+}
+
+.item01 > a > img:nth-child(4){
+    height: 200px;
+}
+
+.item01 > a > img:hover{
+    opacity: 1;
+    scale: 1.5;
+    transition: 0.4s;
+}
+
+
+
