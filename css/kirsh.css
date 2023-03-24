@@ -1,0 +1,600 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+KR:wght@100;700;900&family=Noto+Serif+KR:wght@200&family=Playfair+Display:wght@400;600&family=Shrikhand&family=Yeseva+One&display=swap');
+
+:root {
+    font-family: 'Anton', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Noto Serif KR', serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Shrikhand', cursive;
+    font-family: 'Yeseva One', cursive;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo-sec{
+    width: 100%;
+    min-height: 230vh;
+    clip-path: circle(230vh at 50% -50vh);
+}
+
+.container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    /* clip-path: circle(1200px at center center); */
+}
+
+.container > video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.contents{
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    z-index: 50;
+    color: #fff;
+    font-family: 'Shrikhand';
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+.inner {
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    background-color: #fff;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    /* background-color: #fff; */
+}
+
+nav {
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav01, .nav02 {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.nav01 > a, .nav02 > a {
+    font-size: 1.2rem;
+    font-family: 'Anton';
+    color: #000;
+}
+
+.nav01 > a:hover, .nav02 > a:hover{
+    color: lightpink;
+    transition: 0.5s;
+}
+
+.main-top{
+    margin-top: 5em;
+    height: 100%;
+}
+
+.main-top > video{
+    width: 1400px;
+    height: 800px;
+    object-fit: cover;
+}
+
+.main-top > h2{
+    font-family: 'Shrikhand';
+    letter-spacing: 0.1rem;
+    font-size: 1.5vw;
+    display: flex;
+    justify-content: flex-end;
+}  
+
+.new-arr{
+    width: 100%;
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.top01{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10em;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.top01 > h2{
+    width: 1400px;
+    height: 50px;
+    border-bottom: 2px solid #000 ;
+    font-size: 3rem;
+}
+
+.top01 > img{
+    width: 50vw;
+}
+
+.item01{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+}
+
+.item01 > a > img{
+    width: 130px;
+    height: 180px;
+    /* object-fit: cover; */
+    border-radius: 50%;
+    opacity: .4;
+}
+
+.item01 > a > img:nth-child(4){
+    height: 200px;
+}
+
+.item01 > a > img:hover{
+    opacity: 1;
+    scale: 1.5;
+    transition: 0.4s;
+}
+
+.top02{
+    margin-top: 10em;
+}
+
+.top02 > h2{
+    width: 1400px;
+    height: 50px;
+    border-bottom: 2px solid #000 ;
+    font-size: 3rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.best-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 6em;
+}
+
+.best-box{
+    width: 100%;
+    height: 50vh;
+}
+
+.best-item{
+    width: 250px;
+}
+
+.best-item > a > img{
+    width: 250px;
+}
+
+.best-item > a > img:hover{
+    opacity: .2;
+    transition: 0.2s;
+}
+
+.best-item > p{
+    font-size: 14px;
+    font-family: 'Noto Sans KR';
+    font-weight: bold;
+}
+
+.best-item02{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.best02{
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+}
+
+.best02 > a > img{
+    width: 100px;
+}
+
+.best02 > a > img:hover{
+    transition: 0.2s;
+    opacity: .3;
+}
+
+.best02 > p{
+    font-size: 12px;
+    font-family: 'Noto Sans KR';
+    font-weight: bold;
+}
+
+.shop-bt{
+    display: flex;
+    justify-content: flex-end;
+    margin: 4em 1em 0 0;
+    font-size: 23px;
+}
+
+.shop-bt > a{
+    color: #000;
+}
+
+.shop-bt > a:hover{
+    color: lightpink;
+    transition: 0.2s;
+}
+
+.top03 > h2{
+    width: 1400px;
+    height: 50px;
+    border-bottom: 2px solid #000 ;
+    font-size: 3rem;
+}
+
+.m-section{
+    display: flex;
+    margin-top: 10em;
+    flex-direction: column;
+    gap: 15%;
+    transform-style:preserve-3d;
+    height: 100vh;
+}
+
+.book-sec{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.book{
+    width: 300px;
+    height: 450px;
+    box-shadow: -35px 35px 50px rgba(0, 0, 0, 0.1);
+    transform: rotate(-5deg) skewX(5deg);
+    transition: 0.3s;
+    cursor: pointer;
+}  
+
+.book > img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.book:hover{
+    box-shadow: -50px 50px 100px rgba(0, 0, 0, 0.1);
+    transform: rotate(-5deg) skewX(5deg) translate(20px, -20px);
+}
+
+.book:before{
+    content: '';
+    width: 30px;
+    height: 100%;
+    background: #ffd8d8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: skewY(-45deg) translate(-30px, -15px);
+    box-shadow: inset -10px 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.book::after{
+    content: '';
+    width: 100%;
+    height: 30px;
+    background: #ccc;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: skewX(-45deg) translate(15px, 30px);
+}
+
+.celub{
+    width: 1400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 6em;
+}
+
+.text05 > h2{
+    width: 1400px;
+    height: 50px;
+    border-bottom: 2px solid #000 ;
+    font-size: 3rem;
+    font-family: 'Yeseva One';
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cel-img{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1050px;
+    height: 70vh;
+    margin-top: 5em;
+}
+
+.cel-img > div{
+    width: 250px;
+    height: 350px;
+    margin: 0.5%;
+    cursor: pointer;
+}
+
+.cel01{
+    background-image: url(/prochic/img/press/taeyeon.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.cel01:hover{
+    background-image: url(/prochic/img/t-c.JPG);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.cel02{
+    background-image: url(/prochic/img/press/haewon.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.cel02:hover{
+    background-image: url(/prochic/img/press/haewon-c.JPG);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.cel03{
+    background-image: url(/prochic/img/press/ck.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.cel03:hover{
+    background-image: url(/prochic/img/press/ck-cc.JPG);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.cel04{
+    background-image: url(/prochic/img/press/dayoung.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.cel04:hover{
+    background-image: url(/prochic/img/press/dayoung-c.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.cel05{
+    background-image: url(/prochic/img/press/kang.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.cel05:hover{
+    background-image: url(/prochic/img/press/kang-c.JPG);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.cel06{
+    background-image: url(/prochic/img/press/ateez.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.cel06:hover{
+    background-image: url(/prochic/img/press/atz-c.JPG);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.cel07{
+    background-image: url(/prochic/img/press/soobin.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.cel07:hover{
+    background-image: url(/prochic/img/press/soobin-c.JPG);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.cel08{
+    background-image: url(/prochic/img/press/hk.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.cel08:hover{
+    background-image: url(/prochic/img/press/hk-c.JPG);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.banner{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.fotter-top{
+    width: 800px;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.collabo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.col-left{
+    width: 400px;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+
+.col-left > h2{
+    font-size: 3rem;
+}
+
+.col-left > p{
+    font-size: 1.1rem;
+    font-family: 'Noto Sans kr';
+}
+
+.col-left > a{
+    font-size: 5rem;
+    font-family: 'Noto Sans kr';
+    color: #000;
+}
+
+.col-left > a:hover{
+    color: #ffd8d8;
+    scale: 1.2;
+    transition: 0.3s;
+}
+
+.col-right{
+    width: 600px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.col-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.col-img > img{
+    width: 190px;
+    object-fit: cover;
+}
+
+.col-right > section > h2{
+    font-size: 1rem;
+}
+
+.col-right > section > p{
+    font-size: 0.8rem;
+    font-family: 'Noto Sans KR';
+}
+
+.fotter-menu{
+    margin-top: 15em;
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    justify-content: space-between;
+    margin-left: -400px;
+    position: absolute;
+    left: 50%;
+}
+
+.fotter-menu > section{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.fotter-menu > section > h2{
+    font-size: 0.9rem;
+}
+
+.fotter-menu > section  > a{
+    color: #000;
+    font-family: 'Noto Sans kr';
+}
+
+.fotter-menu > section  > a:hover{
+    color:#ffd8d8;
+    transition: .2s;
+}
+
+.fotter{
+    margin-top: 35em;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    justify-content: space-between;
+    margin-left: -400px;
+    position: absolute;
+    left: 50%;
+    text-align: center;
+    font-family: 'Noto Sans KR';
+    color: gray;
+    opacity: .7;
+}
+
