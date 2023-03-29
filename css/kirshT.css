@@ -1,0 +1,146 @@
+.inner {
+    width: 700px;
+}
+
+header{
+    height: 50px;
+}
+
+.nav01, .nav02{
+    gap:30px;
+}
+
+.nav01 > a, .nav02 > a {
+    font-size: 1rem;
+}
+
+.main-top > video{
+    width: 700px;
+    height: 400px;
+}
+
+.new-arr{
+    height: 100vh;
+}
+
+.top01{
+    height: 55vh;
+}
+
+.top01 > h2{
+    width: 700px;
+    font-size: 1.5rem;
+}
+
+.item01 > a > img{
+    width: 70px;
+    height: 95px;
+    opacity: .8;
+}
+
+.item01 > a > img:nth-child(4){
+    height: 90px;
+}
+
+.top02{
+    margin-top: 5em;
+}
+
+.top02 > h2{
+    width: 700px;
+    font-size: 1.5rem;
+}
+
+.best-box{
+    width: 700px;
+    height: 35vh;
+}
+
+.best-item{
+    width: 125px;
+}
+
+.best-item > a > img{
+    width: 125px;
+}
+
+.best-item > p{
+    font-size: 11px;
+}
+
+.best-item02{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.best02{
+    width: 300px;
+    margin: 10px 0;
+}
+
+.shop-bt{
+    margin: 0.5em 0 0 0;
+}
+
+.top03 > h2{
+    width: 700px;
+    font-size: 1.5rem;
+}
+
+.book{
+    width: 150px;
+    height: 225px;
+}
+
+.m-section{
+    height: 50vh;
+}
+
+.celub{
+    width: 700px;
+    margin-top: 2em;
+}
+
+.text05 > h2{
+    width: 700px;
+    font-size: 1.5rem;
+}
+
+.cel-img{
+    width: 600px;
+    height: 40vh;
+    justify-content: space-between;
+}
+
+.cel-img > div{
+    width: 140px;
+    height: 175px;
+}
+
+.banner{
+    height: 40vh;
+}
+
+.banner > a > img{
+    width: 350px;
+}
+
+.collabo{
+    flex-direction: column;
+    align-items: center;
+}
+
+.col-left{
+    height: 40vh;
+    text-align: center;
+    gap: 40px;
+}
+
+.fotter-menu{
+    width: 790px;
+}
+
+.fotter{
+    font-size: 13px;
+    margin-top: 40em;
+}
